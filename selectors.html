@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creating links to same page</title>
+    <style>
+    .sec, .links{
+       font-size: 30px;
+       background-color: brown;
+       opacity: 0.9;
+       text-align: center;
+       font-style: italic;
+    }
+    .heading, #top{
+      font-size: 50px;
+      font-style: initial;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color:aqua;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+     <h1 id="top" class="links">The Heading of the page</h1>
+    <div>
+      <section>
+
+           This Section contains various links to different section of the page.
+           <article class="links"><a href="#section1" class="">Section1</a></article>
+           <article class="links"><a href="#section2" class="">Section2</a></article>
+           <article class="links"><a href="#section3" class="">Section3</a></article>
+           <article class="links"><a href="#section4" class="">Section4</a></article>
+
+      </section>
+
+
+    </div>
+    <div>
+      <section id="section1" class="sec">
+          <h1 class="heading">Section 1</h1>
+          <p>
+                And here's the page in the browser. And if we click this link, Coursera Facebook Page, it will open a new tab and will load the Facebook page pointed to by that link. Coincidentally, this is a Facebook page I created for the two courses I'm teaching on Coursera which is at facebook.com/CourseraWebDev. So please like this page, and follow it as I'll be posting some optional but interesting and relevant material. Another type of link that is extremely important to know about is a fragment identifier. So here I'm in again in Sublime Text in links-same-page.html. That is located in examples/Lecture09 folder. And as you could see, the links that have set up here all have a very specific format in the href attribute. It's a # followed by some name like section1, section2, and so on. Now what these links are pointing to is a section of our page. Now you could identify a section a couple of different ways. You can have in any tag that has an id with that section name. Notice that the section name does not contain the # sign. Only the link to that section contains the # sign. That's one way to identify a section within the page. Another way is, if we scroll down all the way to the bottom of the page, is to create an anchor tag with a name attribute and name the section very similarly to the way you name a section id. The way you refer to these sections is exactly the same, you put a # in front of the nam
+          </p>
+      </section>
+
+    </div>
+    <div>
+            <section id="section2" class="sec">
+                <h1 class="heading">Section 2</h1>
+                <p>
+                      And here's the page in the browser. And if we click this link, Coursera Facebook Page, it will open a new tab and will load the Facebook page pointed to by that link. Coincidentally, this is a Facebook page I created for the two courses I'm teaching on Coursera which is at facebook.com/CourseraWebDev. So please like this page, and follow it as I'll be posting some optional but interesting and relevant material. Another type of link that is extremely important to know about is a fragment identifier. So here I'm in again in Sublime Text in links-same-page.html. That is located in examples/Lecture09 folder. And as you could see, the links that have set up here all have a very specific format in the href attribute. It's a # followed by some name like section1, section2, and so on. Now what these links are pointing to is a section of our page. Now you could identify a section a couple of different ways. You can have in any tag that has an id with that section name. Notice that the section name does not contain the # sign. Only the link to that section contains the # sign. That's one way to identify a section within the page. Another way is, if we scroll down all the way to the bottom of the page, is to create an anchor tag with a name attribute and name the section very similarly to the way you name a section id. The way you refer to these sections is exactly the same, you put a # in front of the nam
+                </p>
+            </section>
+      
+          </div>
+          <div>
+                <section id="section3" class="sec">
+                    <h1 class="heading">Section 3</h1>
+                    <p>
+                          And here's the page in the browser. And if we click this link, Coursera Facebook Page, it will open a new tab and will load the Facebook page pointed to by that link. Coincidentally, this is a Facebook page I created for the two courses I'm teaching on Coursera which is at facebook.com/CourseraWebDev. So please like this page, and follow it as I'll be posting some optional but interesting and relevant material. Another type of link that is extremely important to know about is a fragment identifier. So here I'm in again in Sublime Text in links-same-page.html. That is located in examples/Lecture09 folder. And as you could see, the links that have set up here all have a very specific format in the href attribute. It's a # followed by some name like section1, section2, and so on. Now what these links are pointing to is a section of our page. Now you could identify a section a couple of different ways. You can have in any tag that has an id with that section name. Notice that the section name does not contain the # sign. Only the link to that section contains the # sign. That's one way to identify a section within the page. Another way is, if we scroll down all the way to the bottom of the page, is to create an anchor tag with a name attribute and name the section very similarly to the way you name a section id. The way you refer to these sections is exactly the same, you put a # in front of the nam
+                    </p>
+                </section>
+          
+              </div>
+                <!-- here is an alternative way where we do not give id to section nor we create any section ,we simply add a name attribute in side teh anchor tag-->
+              <div class="sec">
+                    <h1 class="heading"><a name="section4"> Section 4</a></h2>
+                    <p>
+                      Go to top: <a href="#top">@</a>
+                    </p>
+                  </div>
+    
+</body>
+</html>
